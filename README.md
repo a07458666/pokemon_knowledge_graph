@@ -30,6 +30,23 @@ Adjust query in main() for different questions.
 - Ensure prompts avoid extra Markdown in SPARQL output.
 - Use carefully if allow_dangerous_requests=True.
 
+**Demo Dataset**
+
+Name, Number, Type, evolve_from, evolve_to
+
+```bash
+("皮卡丘", "001", "雷系", "", "雷丘")
+("妙蛙草", "002", "草系", "", "妙蛙花")
+("小火龍", "003", "火系", "", "火恐龍")
+("傑尼龜", "004", "水系", "", "卡咪龜")
+("綠毛蟲", "005", "蟲系", "", "鐵甲蛹")
+("雷丘", "006", "雷系", "皮卡丘", "")
+("火恐龍", "007", "火系", "小火龍", "")
+("卡咪龜", "008", "水系", "傑尼龜", "")
+("鐵甲蛹", "009", "蟲系", "綠毛蟲", "")
+("妙蛙花", "010", "草系", "妙蛙草", "")
+("超夢", "011", "超能力系", "", "")
+```
 **Demo**
 
 -  妙蛙草的number是多少？
