@@ -31,8 +31,12 @@ Adjust query in main() for different questions.
 - Use carefully if allow_dangerous_requests=True.
 
 **Demo**
+
+-  妙蛙草的number是多少？
 ![image](demo/demo001.png)
+- 有多少種名字是三個字的寶可夢？
 ![image](demo/demo002.png)
+- 資料庫中有多少種寶可夢？
 ![image](demo/demo003.png)
+- 皮卡丘的type是什麼？
 ![image](demo/demo004.png)
-![image](demo/demo005.png)
