@@ -29,3 +29,10 @@ Adjust query in main() for different questions.
 - If you see deprecation warnings for chain.run(), switch to chain.invoke().
 - Ensure prompts avoid extra Markdown in SPARQL output.
 - Use carefully if allow_dangerous_requests=True.
+
+**Demo**
+![image]("./demo001.png")
+![image]("./demo002.png")
+![image]("./demo003.png")
+![image]("./demo004.png")
+![image]("./demo005.png")

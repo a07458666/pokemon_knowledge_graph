@@ -30,12 +30,12 @@ def create_pokemon_graph():
     add_pokemon_data(pokemon_graph, "小火龍", "003", "火系", "", "火恐龍")
     add_pokemon_data(pokemon_graph, "傑尼龜", "004", "水系", "", "卡咪龜")
     add_pokemon_data(pokemon_graph, "綠毛蟲", "005", "蟲系", "", "鐵甲蛹")
-    add_pokemon_data(pokemon_graph, "雷丘", "006", "雷系", "皮卡丘")
-    add_pokemon_data(pokemon_graph, "火恐龍", "007", "火系", "小火龍")
-    add_pokemon_data(pokemon_graph, "卡咪龜", "008", "水系", "傑尼龜")
-    add_pokemon_data(pokemon_graph, "鐵甲蛹", "009", "蟲系", "綠毛蟲")
-    add_pokemon_data(pokemon_graph, "妙蛙花", "010", "草系", "妙蛙草")
-    add_pokemon_data(pokemon_graph, "超夢", "011", "超能力系")
+    add_pokemon_data(pokemon_graph, "雷丘", "006", "雷系", "皮卡丘", "")
+    add_pokemon_data(pokemon_graph, "火恐龍", "007", "火系", "小火龍", "")
+    add_pokemon_data(pokemon_graph, "卡咪龜", "008", "水系", "傑尼龜", "")
+    add_pokemon_data(pokemon_graph, "鐵甲蛹", "009", "蟲系", "綠毛蟲", "")
+    add_pokemon_data(pokemon_graph, "妙蛙花", "010", "草系", "妙蛙草", "")
+    add_pokemon_data(pokemon_graph, "超夢", "011", "超能力系", "", "")
     return pokemon_graph
     
 def load_rdf_graph(path):
@@ -65,13 +65,14 @@ def main():
     ADDITIONAL INSTRUCTION: When you make the final query, remove these ``` quotes and only have the query.
     Ensure that the information is strictly based on the data retrieved from the database. Do not mention any information that does not exist in the database.
     """
-    query = "QUERY: 妙蛙草的number是多少？"
+    # query = "QUERY: 妙蛙草的number是多少？"
     # query = "QUERY: 皮卡丘的type是什麼？"
     # query = "QUERY: 妙蛙草的type是什麼？"
     # query = "QUERY: 資料庫中有多少種寶可夢？"
     # query = "QUERY: 有多少種名字是三個字的寶可夢？"
     # query = "QUERY: 有什麼寶可夢不能進化？"
     # query = "QUERY: 有哪幾種寶可夢能進化？"
+    query = "QUERY: 妙蛙花的是從什麼寶可夢進化的？"
     prompt = instruction + query
     print(prompt)
     response = chain.invoke(prompt)
