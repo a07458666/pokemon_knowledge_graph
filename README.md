@@ -31,8 +31,8 @@ Adjust query in main() for different questions.
 - Use carefully if allow_dangerous_requests=True.
 
 **Demo**
-![image]("./demo001.png")
-![image]("./demo002.png")
-![image]("./demo003.png")
-![image]("./demo004.png")
-![image]("./demo005.png")
+![image]("demo/demo001.png")
+![image]("demo/demo002.png")
+![image]("demo/demo003.png")
+![image]("demo/demo004.png")
+![image]("demo/demo005.png")
