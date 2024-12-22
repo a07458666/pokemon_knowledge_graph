@@ -1,4 +1,3 @@
-"""
 # Pokemon LLM RDF
 
 **Overview**  
@@ -24,8 +23,9 @@ Editing
 
 Add/change Pokémon data in create_pokemon_graph().
 Adjust query in main() for different questions.
-Notes
 
-If you see deprecation warnings for chain.run(), switch to chain.invoke().
-Ensure prompts avoid extra Markdown in SPARQL output.
-Use carefully if allow_dangerous_requests=True.
+**Notes**
+
+- If you see deprecation warnings for chain.run(), switch to chain.invoke().
+- Ensure prompts avoid extra Markdown in SPARQL output.
+- Use carefully if allow_dangerous_requests=True.
