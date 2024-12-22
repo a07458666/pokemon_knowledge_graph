@@ -49,6 +49,7 @@ Name, Number, Type, evolve_from, evolve_to
 ```
 **Demo**
 
+## Eazy Case
 -  妙蛙草的number是多少？
 ![image](demo/demo001.png)
 - 有多少種名字是三個字的寶可夢？
@@ -57,3 +58,10 @@ Name, Number, Type, evolve_from, evolve_to
 ![image](demo/demo003.png)
 - 皮卡丘的type是什麼？
 ![image](demo/demo004.png)
+
+# Fail Case
+- 我的皮卡丘被冰屬性招式攻擊可能會怎麼樣？
+![image](demo/fail001.png)
+
+- 我的皮卡丘被冰屬性招式攻擊可能會導致什麼異常狀態？
+![image](demo/fail002.png)

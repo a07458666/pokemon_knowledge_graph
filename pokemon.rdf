@@ -1,0 +1,153 @@
+@prefix ns1: <http://pokemon.org/pokemon_info#> .
+@prefix ns2: <http://pokemon.org/pokemon_causes#> .
+@prefix ns3: <http://pokemon.org/pokemon_status#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:寶可夢受傷 a ns2:Pokemon ;
+    ns2:reason "寶可夢受傷" ;
+    ns2:reation "導致" ;
+    ns2:recommendedSolution "可以送到寶可夢中心" ;
+    ns2:result "異常狀態" .
+
+ns2:寶可夢生級至指定等級 a ns2:Pokemon ;
+    ns2:reason "寶可夢生級至指定等級" ;
+    ns2:reation "進化" ;
+    ns2:recommendedSolution "無" ;
+    ns2:result "進化後的寶可夢" .
+
+ns2:水系的寶可夢 a ns2:Pokemon ;
+    ns2:reason "水系的寶可夢" ;
+    ns2:reation "害怕草系" ;
+    ns2:recommendedSolution "無" ;
+    ns2:result "受到的傷害會增加" .
+
+ns2:火系的寶可夢 a ns2:Pokemon ;
+    ns2:reason "火系的寶可夢" ;
+    ns2:reation "害怕水系" ;
+    ns2:recommendedSolution "無" ;
+    ns2:result "受到的傷害會增加" .
+
+ns2:草系的寶可夢 a ns2:Pokemon ;
+    ns2:reason "草系的寶可夢" ;
+    ns2:reation "害怕火系" ;
+    ns2:recommendedSolution "無" ;
+    ns2:result "受到的傷害會增加" .
+
+ns2:被冰屬性招式攻擊 a ns2:Pokemon ;
+    ns2:reason "被冰屬性招式攻擊" ;
+    ns2:reation "凍結" ;
+    ns2:recommendedSolution "可以使用解凍藥" ;
+    ns2:result "無法行動" .
+
+ns2:被火屬性招式攻擊 a ns2:Pokemon ;
+    ns2:reason "被火屬性招式攻擊" ;
+    ns2:reation "燒傷" ;
+    ns2:recommendedSolution "可以使用燒傷藥" ;
+    ns2:result "每回合會扣血" .
+
+ns2:被電屬性招式攻擊 a ns2:Pokemon ;
+    ns2:reason "被電屬性招式攻擊" ;
+    ns2:reation "麻痺" ;
+    ns2:recommendedSolution "可以使用解麻痺藥" ;
+    ns2:result "有機率無法行動" .
+
+ns1:傑尼龜 a ns1:Pokemon ;
+    ns1:evolve_to "卡咪龜" ;
+    ns1:name "傑尼龜" ;
+    ns1:number "004"^^xsd:string ;
+    ns1:type "水系" .
+
+ns1:卡咪龜 a ns1:Pokemon ;
+    ns1:evolve_from "傑尼龜" ;
+    ns1:name "卡咪龜" ;
+    ns1:number "008"^^xsd:string ;
+    ns1:type "水系" .
+
+ns1:妙蛙種子 a ns1:Pokemon ;
+    ns1:evolve_to "妙蛙花" ;
+    ns1:name "妙蛙種子" ;
+    ns1:number "002"^^xsd:string ;
+    ns1:type "草系" .
+
+ns1:妙蛙花 a ns1:Pokemon ;
+    ns1:evolve_from "妙花種子" ;
+    ns1:name "妙蛙花" ;
+    ns1:number "010"^^xsd:string ;
+    ns1:type "草系" .
+
+ns1:小火龍 a ns1:Pokemon ;
+    ns1:evolve_to "火恐龍" ;
+    ns1:name "小火龍" ;
+    ns1:number "003"^^xsd:string ;
+    ns1:type "火系" .
+
+ns1:火恐龍 a ns1:Pokemon ;
+    ns1:evolve_from "小火龍" ;
+    ns1:name "火恐龍" ;
+    ns1:number "007"^^xsd:string ;
+    ns1:type "火系" .
+
+ns1:皮卡丘 a ns1:Pokemon ;
+    ns1:evolve_to "雷丘" ;
+    ns1:name "皮卡丘" ;
+    ns1:number "001"^^xsd:string ;
+    ns1:type "雷系" .
+
+ns1:綠毛蟲 a ns1:Pokemon ;
+    ns1:evolve_to "鐵甲蛹" ;
+    ns1:name "綠毛蟲" ;
+    ns1:number "005"^^xsd:string ;
+    ns1:type "蟲系" .
+
+ns1:超夢 a ns1:Pokemon ;
+    ns1:name "超夢" ;
+    ns1:number "011"^^xsd:string ;
+    ns1:type "超能力系" .
+
+ns1:鐵甲蛹 a ns1:Pokemon ;
+    ns1:evolve_from "綠毛蟲" ;
+    ns1:name "鐵甲蛹" ;
+    ns1:number "009"^^xsd:string ;
+    ns1:type "蟲系" .
+
+ns1:雷丘 a ns1:Pokemon ;
+    ns1:evolve_from "皮卡丘" ;
+    ns1:name "雷丘" ;
+    ns1:number "006"^^xsd:string ;
+    ns1:type "雷系" .
+
+ns3:中毒 a ns3:Pokemon ;
+    ns3:category "異常狀態" ;
+    ns3:description "每回合會扣血" ;
+    ns3:name "中毒" ;
+    ns3:recommendedSolution "可以使用解毒藥",
+        "可以送到寶可夢中心" .
+
+ns3:凍結 a ns3:Pokemon ;
+    ns3:category "異常狀態" ;
+    ns3:description "無法行動" ;
+    ns3:name "凍結" ;
+    ns3:recommendedSolution "可以使用解凍藥",
+        "可以送到寶可夢中心" .
+
+ns3:燒傷 a ns3:Pokemon ;
+    ns3:category "異常狀態" ;
+    ns3:description "每回合會扣血" ;
+    ns3:name "燒傷" ;
+    ns3:recommendedSolution "可以使用燒傷藥",
+        "可以送到寶可夢中心" .
+
+ns3:睡眠 a ns3:Pokemon ;
+    ns3:category "異常狀態" ;
+    ns3:description "無法行動" ;
+    ns3:name "睡眠" ;
+    ns3:recommendedSolution "可以使用解眠藥",
+        "可以送到寶可夢中心" .
+
+ns3:麻痺 a ns3:Pokemon ;
+    ns3:category "異常狀態" ;
+    ns3:description "有機率無法行動" ;
+    ns3:name "麻痺" ;
+    ns3:recommendedSolution "可以使用解麻痺藥",
+        "可以送到寶可夢中心" .
+
